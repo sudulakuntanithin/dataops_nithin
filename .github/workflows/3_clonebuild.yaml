@@ -11,6 +11,4 @@ jobs:
       - name: let's confirm
         run:  |
             ls $pwd
-            ls ~ 
-            ls /home/runner/work/GithubActions/GithubActions
-
+            ls ~    

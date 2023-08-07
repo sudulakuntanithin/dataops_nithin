@@ -1,0 +1,16 @@
+name: fresh_machine, clone_git_repo, list's, aws_s3
+on: 
+    push:
+        branches: [main]
+jobs:
+  JobForClone:
+    runs-on: ubuntu-latest
+    steps:
+      - name: cloning current repository
+        uses: actions/checkout@v3 #it will clone the curent repo
+      - name: let's confirm
+        run:  |
+            ls $pwd
+            ls ~ 
+            ls /home/runner/work/GithubActions/GithubActions
+
